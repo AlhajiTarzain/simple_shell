@@ -16,23 +16,23 @@ char **mtoken(char *input_str, char *delimiter)
 		return (NULL);
 
 	token = strtok(input_copy, delimiter);
-	num_token = 0;
+	num_tokens = 0;
 	while (token != NULL)
 	{
 		++num_tokens;
 		token = strtok(NULL, delimiter);
 	}
-	token_array = (char **)malloc(sizeof(char *) * (num_token + 1));
+	token_array = (char **)malloc(sizeof(char *) * (num_tokens + 1));
 	if (token_array == NULL)
 	{
 		free(input_copy);
 		return (NULL);
 	}
 	token = strtok(input_str, delimiter);
-	num_token = 0;
+	num_tokens = 0;
 	while (token != NULL)
 	{
-		token_array[num_token] == duplicator(token);
+		token_array[num_tokens] = duplicator(token);
 		if (token_array[num_tokens] == NULL)
 		{
 			free(token_array);
