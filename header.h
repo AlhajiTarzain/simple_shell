@@ -30,5 +30,14 @@ char *create_path(char *args);
 int inbuilt(char **args, char *input, int result);
 int execute_cmd(char **args, __attribute__((unused)) char *input);
 int checker(char **args, char *line);
+char *copy(char *s1, char *s2);
+char *concat(char *s1, const char *s2);
+int comp(char *first, char *second);
+char *duplicator(const char *str);
+int length(const char *str);
+int ston(char *str);
+void empty(char **prr);
+int exitshell(char **cmd, char *input, int status);
+char **mtoken(char *input_str, char *delimiter);
 
 #endif
