@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char *prompt = "THE BIG BASH:$ ";
+	char *prompt = "AZZAIN:$ ";
 	char *input = NULL;
 	char **token_arr;
 	int result = 0;
