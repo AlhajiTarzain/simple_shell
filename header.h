@@ -26,5 +26,9 @@ char *duplicator(const char *str);
 int comp(char *first, char *second);
 char *copy(char *s1, char *s2);
 char *concat(char *s1, const char *s2);
+char *create_path(char *args);
+int inbuilt(char **args, char *input, int result);
+int execute_cmd(char **args, __attribute__((unused)) char *input);
+int checker(char **args, char *line);
 
 #endif
