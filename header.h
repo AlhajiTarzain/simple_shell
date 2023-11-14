@@ -17,5 +17,14 @@
 #include <errno.h>
 
 /*prototypes*/
+int myputchar(char c);
+void _myprintf(const char *);
+int inbenv();
+int compare(const char *first, const char *second, size_t total);
+int length(const char *str);
+char *duplicator(const char *str);
+int comp(char *first, char *second);
+char *copy(char *s1, char *s2);
+char *concat(char *s1, const char *s2);
 
 #endif
