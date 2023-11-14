@@ -29,7 +29,7 @@ int main(void)
 		if (input[iread - 1] == '\n')
 			input[iread - 1] = '\0';
 
-		token_arr = mktoken(input, " \t");
+		token_arr = mtoken(input, " \t");
 		if (token_arr[0] == NULL)
 		{
 			free(token_arr);

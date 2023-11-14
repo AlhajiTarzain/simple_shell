@@ -27,6 +27,7 @@ int execute_cmd(char **args, __attribute__((unused)) char *input);
 int checker(char **args, char *line);
 char *copy(char *s1, char *s2);
 char *concat(char *s1, const char *s2);
+extern char **environ;
 int comp(char *first, char *second);
 char *duplicator(const char *str);
 int length(const char *str);

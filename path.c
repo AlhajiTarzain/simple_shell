@@ -25,7 +25,7 @@ char *create_path(char *args)
 		return (NULL);
 	}
 	copy(buffer, clone);
-	direct = mktoken(buffer, ":");
+	direct = mtoken(buffer, ":");
 	for (i = 0; direct[i]; i++)
 	{
 		clone = malloc(sizeof(char) * (length(direct[i]) + length(args) + 2));

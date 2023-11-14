@@ -8,7 +8,7 @@
 char **mtoken(char *input_str, char *delimiter)
 {
 	char *token, *input_copy, **token_array;
-	int num_tokens;
+	int num_token;
 
 	input_copy = duplicator(input_str);
 
@@ -19,7 +19,7 @@ char **mtoken(char *input_str, char *delimiter)
 	num_token = 0;
 	while (token != NULL)
 	{
-		++num_tokens;
+		++num_token;
 		token = strtok(NULL, delimiter);
 	}
 	token_array = (char **)malloc(sizeof(char *) * (num_token + 1));
@@ -32,18 +32,18 @@ char **mtoken(char *input_str, char *delimiter)
 	num_token = 0;
 	while (token != NULL)
 	{
-		token_array[num_token] == duplicator(token);
-		if (token_array[num_tokens] == NULL)
+		token_array[num_token] = duplicator(token);
+		if (token_array[num_token] == NULL)
 		{
 			free(token_array);
 			free(input_copy);
 			return (NULL);
 		}
 		token = strtok(NULL, delimiter);
-		++num_tokens;
+		++num_token;
 	}
 	free(input_copy);
-	token_array[num_tokens] = NULL;
+	token_array[num_token] = NULL;
 	return (token_array);
 }
 
