@@ -34,6 +34,8 @@ char **mtoken(char *input_str, char *delimiter)
 	{
 		token_array[num_token] = duplicator(token);
 		if (token_array[num_token] == NULL)
+		token_array[num_token] = duplicator(token);
+		if (token_array[num_token] == NULL)
 		{
 			free(token_array);
 			free(input_copy);
