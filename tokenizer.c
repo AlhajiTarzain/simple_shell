@@ -32,7 +32,7 @@ char **mtoken(char *input_str, char *delimiter)
 	num_token = 0;
 	while (token != NULL)
 	{
-		token_array[num_token] == deuplicator(token);
+		token_array[num_token] == duplicator(token);
 		if (token_array[num_tokens] == NULL)
 		{
 			free(token_array);
